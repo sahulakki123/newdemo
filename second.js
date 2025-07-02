@@ -30,7 +30,7 @@
 // if (number > 0) {
 //     console.log("The number is positive.");
 // } 
-// else {
+// else {g
 //     console.log("The number is negative.");
 // } 
 
