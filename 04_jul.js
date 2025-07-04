@@ -53,3 +53,38 @@ for (let r = 1; r<=5; r++){
 }
 
 
+
+
+for (let r = 1; r<=5; r++){
+    for(let c = 1; c<=5; c++)
+        if (r == 5 || r == 1 || c == 1 || c == 1){
+    document.write('*')
+}else{
+    document.write('&nbsp&nbsp')
+}
+    document.write("<br>")
+}
+
+
+// *   *
+//  * *
+//   *
+//  * *
+// *   *
+
+
+
+// Total number of rows
+let n = 5;
+for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = 0; j < 5; j++) {
+        if (j === i || j === n - 1 - i) {
+            row += "*";
+        } else {
+            row += " ";
+        }
+    }
+    document.write(row);
+}
+
