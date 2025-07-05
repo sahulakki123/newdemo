@@ -75,16 +75,17 @@ for (let r = 1; r<=5; r++){
 
 
 // Total number of rows
-let n = 5;
-for (let i = 0; i < n; i++) {
-    let row = "";
-    for (let j = 0; j < 5; j++) {
-        if (j === i || j === n - 1 - i) {
-            row += "*";
+
+for (let r = 1; r<=5; r++) {
+    for (let c = 1; c<=5; c++) {
+        if (r ==c || r+c==6) {
+            document.write("*")
+            
         } else {
-            row += " ";
+            document.write('&nbsp')
         }
     }
     document.write(row);
+
 }
 
