@@ -8,9 +8,6 @@
 // function identifire(){ -> function declaration
 //     // code -> function defention
 // }
-
-
-
 // identifire() -> function colling
 
 // function domo(){
