@@ -31,9 +31,4 @@ function r(){
     Tt1.style.color = "red"
 }
 
-
-
-
-// ak box hai  3 butan hai r
-
-// text ke pe cilik kare to red ho jaye 
+ 

@@ -1,0 +1,16 @@
+
+.css1{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+}
+.css2{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#text{
+    cursor: pointer;
+}
+
