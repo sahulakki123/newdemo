@@ -1,0 +1,21 @@
+.cs1{
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+    background-size: contain;
+}
+
+.cs2{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.cs{
+    display: flex;
+}
+.cs2 img{
+    height: 100%;
+    width: 100%;
+}
