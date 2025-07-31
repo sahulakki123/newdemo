@@ -75,11 +75,20 @@ Aoo.map((e)=>{
 
 let show = document.querySelector("#show")
 Aoo.map((e)=>{
+    // show.innerHTML+= `<div>
+    // <h1>${e.name}</h1>
+    // <p> ${e.age}</p>
+    // <p>${e.city}</p>
+    // </div>`
+
     show.innerHTML+= `
-    <h1>${e.name}</h1>
-    <p> ${e.age}</h1>
-    <p>${e.city}</p>
-     `
+    <tr>
+        <td>${e.name}</td>
+        <td>${e.age}</td>
+        <td>${e.city}</td>
+    </tr>
+    `
+    
 })
 
 
