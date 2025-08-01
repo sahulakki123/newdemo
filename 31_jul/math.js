@@ -20,11 +20,35 @@
     
 // },2000)
 
-let c=0
-let  okk1=()=>{
-    setInterval(()=>{
-      console.log(c);
-      c++   
-    },2000)
 
-}
+
+
+// let c=0
+// let inter
+// let  okk1=()=>{
+//    inter = setInterval(()=>{
+//       console.log(c);
+//       c++   
+
+//     if (c > 10) {
+//       clearInterval(inter)
+//     }
+//     },1000)
+
+// }
+// let stop=()=>{
+//   clearInterval(inter)
+
+// }
+
+
+setInterval(()=>{
+  let Currtime = new Date()
+
+  let hour = Currtime.getHours()
+  let mins = Currtime.getMinutes()
+  let sec = Currtime.getSeconds()
+
+  let show = document.querySelector("#dishple")
+  
+})
