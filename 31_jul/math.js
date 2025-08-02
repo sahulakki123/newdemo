@@ -42,13 +42,60 @@
 // }
 
 
-setInterval(()=>{
-  let Currtime = new Date()
+// setInterval(()=>{
+//   let Currtime = new Date()
 
-  let hour = Currtime.getHours()
-  let mins = Currtime.getMinutes()
-  let sec = Currtime.getSeconds()
+//   let hour = Currtime.getHours()
+//   let mins = Currtime.getMinutes()
+//   let sec = Currtime.getSeconds()
 
-  let show = document.querySelector("#dishple")
-  
-})
+//   let show1 = document.querySelector("#dishple")
+
+//   hour = hour < 10 ? '0' + hour : hour;
+//   mins = mins < 10 ? '0' + mins : mins;
+//   sec = sec < 10 ? '0' + sec : sec;
+
+//   let show = document.querySelector("#dishple");
+//   show.textContent = `${hour}:${mins}:${sec}`;
+// }, 1000);
+
+ let hour = 0, minute = 0, second = 0;
+let interval;
+
+let updateDisplay = () => {
+  let h = String(hour).padStart(2, '0');
+  let m = String(minute).padStart(2, '0');
+  let s = String(second).padStart(2, '0');
+  let a= document.getElementById("timer")
+  a.innerText = `${h}:${m}:${s}`;
+};
+
+let startTimer = () => {
+  if (interval) return;
+  interval = setInterval(() => {
+    second++;
+    if (second === 60) {
+      second = 0;
+      minute++;
+    }
+    if (minute === 60) {
+      minute = 0;
+      hour++;
+    }
+    updateDisplay();
+  }, 1000);
+};
+
+let stopTimer = () => {
+  clearInterval(interval);
+  interval = null;
+};
+
+let resetTimer = () => {
+  clearInterval(interval);
+  interval = null;
+  hour = 0;
+  minute = 0;
+  second = 0;
+  updateDisplay();
+};

@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <style>
+    #timer {
+      font-size: 40px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .btns {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
     <!-- <button onclick="okk()">on click</button> -->
 
-    <button onclick="okk1()">number</button>
-     <button onclick="stop()">stop</button>
+    <!-- <button onclick="okk1()">number</button> -->
+     <!-- <button onclick="stop()">stop</button>
     <div id="display">
         <span>0</span>
         <span>0</span>
         <span>0</span>
     </div>
     <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button> -->
+
+  <div id="timer">00:00:00</div>
+  <div class="btns">
+    <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+
+  </div>
     <script src="math.js"></script>
 
 </body>
