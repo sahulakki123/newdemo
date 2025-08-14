@@ -1,0 +1,28 @@
+{
+
+    "rent":[
+        {
+            "name":"Lakki sahu",
+            "color": "red",
+            "age":20,
+            "p": 4844878
+        },
+             {
+            "name":"rohit",
+            "color": "b",
+            "age":20,
+            "p": 5489454
+        },     {
+            "name":" sahu",
+            "color": "red",
+            "age":20,
+            "p": 574897848
+        },     {
+            "name":"rajesh",
+            "color": "red",
+            "age":20,
+            "p": 5748748
+        }
+
+    ]
+}
